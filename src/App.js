@@ -6,12 +6,12 @@ import Cart from "./components/Cart";
 function App() {
   return (
     <div className="App">
-      <Cart></Cart>
       <Header></Header>
-
       <ul className="items">
         <ItemsList></ItemsList>
       </ul>
+
+      <Cart></Cart>
     </div>
   );
 }
