@@ -2,7 +2,12 @@ import React from "react";
 import "./Cart.css";
 
 export default function Cart(items) {
+  let startingPrice = 0;
   const counts = items.cart;
+  const cart = [...items.cart].sort();
+  const totalPrice = cart.reduce((acc, curr) => {
+    return acc + items.items[curr].price;
+  }, startingPrice);
 
   return (
     <div className="cart">
@@ -23,7 +28,7 @@ export default function Cart(items) {
             <td colSpan="2">
               Total <p id="discount">(discounts applied)</p>
             </td>
-            <td>Total Price</td>
+            <td>£{totalPrice / 100}</td>
           </tr>
         </tbody>
       </table>
