@@ -8,9 +8,30 @@ export default function Cart(items) {
     return acc;
   }, {});
 
+  const discountMap = {};
+
+  Object.entries(items.items).forEach(([itemName, { special }]) => {
+    if (special && counts[itemName] >= special[0]) {
+      const discounts = Math.floor(counts[itemName] / special[0]);
+      discountMap[itemName] = {
+        itemsDiscounted: discounts * special[0],
+        discountedPrice: special[1] * discounts,
+      };
+    }
+  });
+
   const cart = [...items.cart].sort();
 
   let startingPrice = 0;
+
+  Object.entries(discountMap).forEach(
+    ([itemName, { itemsDiscounted, discountedPrice }]) => {
+      const index = cart.indexOf(itemName);
+      cart.splice(index, itemsDiscounted);
+      startingPrice += discountedPrice;
+    }
+  );
+
   const totalPrice = cart.reduce((acc, curr) => {
     return acc + items.items[curr].price;
   }, startingPrice);

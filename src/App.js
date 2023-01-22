@@ -9,6 +9,7 @@ import dragonfruit from "./images/dragonfruit.png";
 
 function App() {
   const [cart, setCart] = useState([]);
+
   const items = {
     A: {
       src: apple,
