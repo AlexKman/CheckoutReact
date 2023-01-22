@@ -6,18 +6,21 @@ This project includes a interface which allows you to add items to your cart to 
 ## Installation
 
 1. Clone the repo
-   ```sh
+
+```sh
    git clone https://github.com/AlexKman/CheckoutReact.git
-   ```
+```
+
 2. Install NPM packages
-   ```sh
+
+```sh
    npm install
-   ```
+```
 
 ## Running the project
 
 Following the Installation instructions, simply run the following command to run the project in your localhost
 
-    ```sh
-    npm start
-    ```
+```sh
+   npm start
+```
