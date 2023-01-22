@@ -3,7 +3,10 @@ import "./Cart.css";
 
 export default function Cart(items) {
   let startingPrice = 0;
-  const counts = items.cart;
+  const counts = items.cart.reduce((acc, cv) => {
+    acc[cv] ? ++acc[cv] : (acc[cv] = 1);
+    return acc;
+  }, {});
   const cart = [...items.cart].sort();
   const totalPrice = cart.reduce((acc, curr) => {
     return acc + items.items[curr].price;
