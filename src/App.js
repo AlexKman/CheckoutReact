@@ -37,7 +37,10 @@ function App() {
         <span className="card-price">£{price / 100}</span>
       </header>
       <img className="card-image" src={src} alt={itemName} />
-      <button className="card-button" onClick={() => {}}>
+      <button
+        className="card-button"
+        onClick={() => setCart([...cart, itemName])}
+      >
         Add to Cart
       </button>
     </li>
