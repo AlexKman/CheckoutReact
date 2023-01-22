@@ -31,6 +31,7 @@ export default function ItemsList() {
     <li key={itemName} className="card">
       <header className="card-header" id="header">
         <span>{itemName}</span>
+        <span className="price">£{price / 100}</span>
       </header>
       <img className="card-image" src={src} alt={itemName} />
     </li>

@@ -13,3 +13,9 @@
   height: 120px;
   margin: 20px 0;
 }
+
+.price {
+  color: black;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
