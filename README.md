@@ -18,6 +18,6 @@ This project includes a interface which allows you to add items to your cart to 
 
 Following the Installation instructions, simply run the following command to run the project in your localhost
 
-```sh
-npm start
-```
+    ```sh
+    npm start
+    ```
