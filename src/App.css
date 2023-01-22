@@ -25,8 +25,8 @@
   align-items: center;
 }
 .card-image {
-  height: 120px;
-  margin: 20px 0;
+  height: 180px;
+  margin: 30px 0;
 }
 .card-price {
   color: black;
@@ -34,13 +34,14 @@
   font-size: 1.2em;
 }
 .card-button {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   width: 100%;
   padding: 6px 0;
   background: lightgray;
   color: black;
   cursor: pointer;
   border: 0;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 .card-button:hover {
   transition: background 0.25s ease-out;

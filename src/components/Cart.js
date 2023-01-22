@@ -20,7 +20,7 @@ export default function Cart(items) {
       <table>
         <thead>
           <tr>
-            <td colSpan="3">Items</td>
+            <td colSpan="3">Cart</td>
           </tr>
         </thead>
         <tbody>
