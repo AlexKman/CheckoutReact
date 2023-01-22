@@ -1,4 +1,4 @@
-.card header {
+.card-header {
   width: 100%;
   padding: 5px 0;
   background: lightgray;
@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.card img {
+.card-image {
   height: 120px;
   margin: 20px 0;
 }

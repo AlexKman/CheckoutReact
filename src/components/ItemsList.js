@@ -29,10 +29,10 @@ const items = {
 export default function ItemsList() {
   return Object.entries(items).map(([itemName, { src, price }]) => (
     <li key={itemName} className="card">
-      <header id="header">
+      <header className="card-header" id="header">
         <span>{itemName}</span>
       </header>
-      <img src={src} alt={itemName} />
+      <img className="card-image" src={src} alt={itemName} />
     </li>
   ));
 }
