@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Cart from "./components/Cart";
@@ -7,6 +8,7 @@ import cherry from "./images/cherry.png";
 import dragonfruit from "./images/dragonfruit.png";
 
 function App() {
+  const [cart, setCart] = useState([]);
   const items = {
     A: {
       src: apple,
@@ -45,7 +47,7 @@ function App() {
     <div className="App">
       <Header></Header>
       <ul className="items">{ItemsList}</ul>
-      <Cart></Cart>
+      <Cart cart={cart} items={items}></Cart>
     </div>
   );
 }
