@@ -1,5 +1,15 @@
 .App {
+  text-align: center;
+  align-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  text-align: center;
+}
+
+#items {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
 }
