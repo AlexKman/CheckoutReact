@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./itemsList.css";
 import apple from "../images/apple.png";
 import banana from "../images/banana.png";
 import cherry from "../images/cherry.png";
@@ -28,7 +28,10 @@ const items = {
 
 export default function ItemsList() {
   return Object.entries(items).map(([itemName, { src, price }]) => (
-    <li>
+    <li key={itemName} className="card">
+      <header id="header">
+        <span>{itemName}</span>
+      </header>
       <img src={src} alt={itemName} />
     </li>
   ));
