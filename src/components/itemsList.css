@@ -8,14 +8,21 @@
   justify-content: space-around;
   align-items: center;
 }
-
 .card-image {
   height: 120px;
   margin: 20px 0;
 }
-
-.price {
+.card-price {
   color: black;
   border-radius: 5px;
+  font-size: 1.2em;
+}
+.card-button {
+  width: 100%;
+  padding: 6px 0;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  border: 0;
   font-size: 1.2em;
 }
