@@ -1,5 +1,5 @@
 import React from "react";
-import "./itemsList.css";
+import "./ItemsList.css";
 import apple from "../images/apple.png";
 import banana from "../images/banana.png";
 import cherry from "../images/cherry.png";
