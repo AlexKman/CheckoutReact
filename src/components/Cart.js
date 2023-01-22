@@ -2,12 +2,15 @@ import React from "react";
 import "./Cart.css";
 
 export default function Cart(items) {
-  let startingPrice = 0;
+  // Function to break down shopping cart items added and return accumulator, avoids cells added repeatedly each time
   const counts = items.cart.reduce((acc, cv) => {
     acc[cv] ? ++acc[cv] : (acc[cv] = 1);
     return acc;
   }, {});
+
   const cart = [...items.cart].sort();
+
+  let startingPrice = 0;
   const totalPrice = cart.reduce((acc, curr) => {
     return acc + items.items[curr].price;
   }, startingPrice);
@@ -25,6 +28,7 @@ export default function Cart(items) {
             <tr key={itemName}>
               <td>{itemName}</td>
               <td>{count}</td>
+              <td>£{(items.items[itemName].price * count) / 100}</td>{" "}
             </tr>
           ))}
           <tr>
