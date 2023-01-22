@@ -20,9 +20,13 @@
 .card-button {
   width: 100%;
   padding: 6px 0;
-  background-color: transparent;
+  background: lightgray;
   color: black;
   cursor: pointer;
   border: 0;
   font-size: 1.2em;
+}
+.card-button:hover {
+  transition: background 0.25s ease-out;
+  background: grey;
 }
