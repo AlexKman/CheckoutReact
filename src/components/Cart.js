@@ -14,7 +14,10 @@ export default function Cart(items) {
         </thead>
         <tbody>
           {Object.entries(counts).map(([itemName, count]) => (
-            <tr key={itemName}></tr>
+            <tr key={itemName}>
+              <td>{itemName}</td>
+              <td>{count}</td>
+            </tr>
           ))}
           <tr>
             <td colSpan="2">
