@@ -49,7 +49,7 @@ export default function Cart(items) {
             <tr key={itemName}>
               <td>{itemName}</td>
               <td>{count}</td>
-              <td>£{(items.items[itemName].price * count) / 100}</td>{" "}
+              <td>£{(items.items[itemName].price * count) / 100}</td>
             </tr>
           ))}
           <tr>

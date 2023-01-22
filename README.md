@@ -1,6 +1,7 @@
 # CheckoutReact
 
 CheckoutReact is a React Application used to display a checkout system that handles pricing schemes such as “apples cost 50 pence, three apples cost £1.30.”
+This project includes a interface which allows you to add items to your cart to which the pricing, quantity and discounted pricing is displayed.
 
 ## Installation
 
@@ -17,7 +18,6 @@ CheckoutReact is a React Application used to display a checkout system that hand
 
 Following the Installation instructions, simply run the following command to run the project in your localhost
 
-    ```sh
-
-npm Start
+```sh
+npm start
 ```
